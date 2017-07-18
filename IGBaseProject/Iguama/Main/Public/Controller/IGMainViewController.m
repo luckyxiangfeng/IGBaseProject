@@ -133,6 +133,7 @@ static CGFloat const ZU_HOMETAB_SIZE = 24.0f;
 #pragma mark - UITabBarControllerDelegate
 
 - (BOOL)tabBarController:(UITabBarController*)tabBarController shouldSelectViewController:(UINavigationController*)viewController {
+    /*
     BOOL isDiscover = [viewController.topViewController isKindOfClass:[IGDiscoverViewController class]];
     if (isDiscover) {
         return NO;
@@ -143,19 +144,7 @@ static CGFloat const ZU_HOMETAB_SIZE = 24.0f;
     if (isMine) {
         return NO;
     }
-    
-   /*
-    if (![ZULoginValidate isLogin]&&isHomeService)
-    {
-        [ZULogManager postLogWithOp_type:@"专属服务-未登录" content:@""];
-        viewController.tabBarItem.badgeValue = nil;
-        
-    } else if (isHomeService)
-    {
-        [ZULogManager postLogWithOp_type:@"专属服务" content:@""];
-    }
-    */
-    
+     */
     
     return YES;
 }
