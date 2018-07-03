@@ -41,16 +41,7 @@ static NSString *const UPDATEVERSION_SERVERCENTER_key=@"UPDATEVERSION_SERVERCENT
 -(id)init
 {
     if (self == [super init]) {
-        //测试环境
-        self.develpoerDictionary=@{ACCOUNT_SERVERCENTER_Key:@"http://192.168.254.189:8082/mobile-user-service/",PICTURE_SERVERCENTER_key:@"http://zxpt.image.zx-erp.qeeka.com/image-service/",BUSINESSLOGIC_SERVERCENTER_key:@"http://192.168.254.189:8082/mobile-user-service/",UPDATEVERSION_SERVERCENTER_key:@"http://jia-blossom-erp-srv2.suryani.cn:8085/mobile-package-app-service/"};
-        
-        
-        //产品环境
-        self.productDictionary=@{ACCOUNT_SERVERCENTER_Key:@"https://mob-user.zxpt.api.zx-erp.qeeka.com/mobile-user-service/",PICTURE_SERVERCENTER_key:@"https://zxpt.image.zx-erp.qeeka.com/image-service/",BUSINESSLOGIC_SERVERCENTER_key:@"https://mob-user.zxpt.api.zx-erp.qeeka.com/mobile-user-service/",UPDATEVERSION_SERVERCENTER_key:@"https://mob-package.zxpt.api.zx-erp.qeeka.com:454/mobile-package-app-service/"};
-        
-        self.configDictionary = [NSMutableDictionary dictionary];
-        [self.configDictionary setObject:self.develpoerDictionary forKey:developer];
-        [self.configDictionary setObject:self.productDictionary forKey:product];
+
     }
     return self;
 }
